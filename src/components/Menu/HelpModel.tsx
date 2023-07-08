@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 import "./Menu.css";
 
 interface HelpModelProps {
@@ -6,10 +6,6 @@ interface HelpModelProps {
 }
 
 class HelpModel extends React.Component<HelpModelProps> {
-  constructor(props: HelpModelProps) {
-    super(props);
-  }
-
   render() {
     const { onClose } = this.props;
     return (

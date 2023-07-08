@@ -20,7 +20,7 @@ function Main() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={wordSnakeImage} className='imgWS' alt="Image"/>
+        <img src={wordSnakeImage} className='imgWS'/>
         <button className="WelcomePageButton" onClick={goToSecondsComp}>Log In </button>
         <button className="WelcomePageButton" onClick={gotToFirstComp}>Sign Up </button>
       </header>

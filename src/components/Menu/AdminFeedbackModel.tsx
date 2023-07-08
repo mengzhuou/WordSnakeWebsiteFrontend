@@ -113,7 +113,7 @@ class AdminFeedbackModel extends React.Component<AdminFeedbackModelProps, AdminF
         const feedbackId = parseInt(fbId, 10);
         updateFeedbackStatus(feedbackId, newStatus).then(() => {
             const updatedMessages = this.state.adminFeedbackMessages.map((message) => {
-                const [id, email, feedback, rating, status, timestamp] = message.split(',');
+                const [id, email, feedback, rating, timestamp] = message.split(',');
                 if (id === fbId) {
                     return [id, email, feedback, rating, newStatus, timestamp].join(',');
                 } else {
@@ -164,7 +164,7 @@ class AdminFeedbackModel extends React.Component<AdminFeedbackModelProps, AdminF
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.state.sortedMessage.map((message, index) => {
+                                {this.state.sortedMessage.map((message) => {
                                     const [id, email, feedback, rating, status, timestamp] = message.split(',');
 
                                     return (
