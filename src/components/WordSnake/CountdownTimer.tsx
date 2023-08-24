@@ -16,7 +16,7 @@ const CountdownTimer: React.FC<Props> = ({ duration, onTimeUp }) => {
     return () => {
       clearInterval(intervalId);
     };
-  }, []);
+  }, [timeLeft]);
 
   useEffect(() => {
     if (timeLeft === 0) {

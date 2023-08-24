@@ -1,7 +1,7 @@
 import "./GameoverBoard.css";
 
 import { withFuncProps } from "../withFuncProps";
-import { logout, getBestScore, updateBestScore, getLeaderBoard } from '../../helpers/connector';
+import { logout, updateBestScore, getLeaderBoard } from '../../helpers/connector';
 import React from "react";
 
 class GameoverBoard extends React.Component<any, any>{
